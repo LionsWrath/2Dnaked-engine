@@ -7,7 +7,7 @@ import javax.swing.JFrame;
  *
  * @author lionswrath
  */
-public class StateManager {
+public abstract class StateManager {
     
     private ArrayList<State> states;
     
@@ -20,12 +20,7 @@ public class StateManager {
         initAllStates();
     }
 
-    private void initAllStates() {
-        //Adicionar estados criados aqui
-        //Jogo era criado aqui
-        //states.add(new Menu(gameFrame));
-        
-    }
+    public abstract void initAllStates();
     
     public void startCurrentState() {
        gameFrame.add(states.get(currentState));

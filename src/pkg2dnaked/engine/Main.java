@@ -9,7 +9,15 @@ import javax.swing.JFrame;
  */
 public class Main extends JFrame {
 
-    public StateManager sm = new StateManager(this);
+    public StateManager sm = new StateManager(this) {
+
+        @Override
+        public void initAllStates() {
+            //Adicionar estados criados aqui
+            //Jogo era criado aqui
+            //states.add(new Menu(gameFrame));
+        }
+    };
     
     public static final int GAME_WIDTH = 960, GAME_HEIGHT = 600;
 

@@ -19,7 +19,7 @@ public class Menu extends State {
     
     Graphics2D g = getGraphics2D();
     //Para carregar uma imagem estatica
-    Image bg = ResourceLoader.getImage("backgroundWelcome.jpg");
+    //Image bg = ResourceLoader.getImage("Image.jpg");
     
     //Para inicializar som
     SoundManager som = new SoundManager() {
