@@ -75,6 +75,7 @@ public class InputManager implements KeyListener, MouseListener, MouseMotionList
     
     public ArrayList<Key> keys = new ArrayList<Key>();
     public ArrayList<Click> clicks = new ArrayList<Click>();
+    public String typed = "";
     
     public Mouse MOUSE = new Mouse();
     
@@ -99,6 +100,13 @@ public class InputManager implements KeyListener, MouseListener, MouseMotionList
             }
         }
         return false;
+    }
+    
+    //Testar essa func
+    public String getKeyTyped(KeyEvent e) {
+        String temp = typed;
+        typed = "";
+        return typed;
     }
     
     public boolean isMouseClicked(String s) {
@@ -196,5 +204,8 @@ public class InputManager implements KeyListener, MouseListener, MouseMotionList
     }
     
     @Override
-    public void keyTyped(KeyEvent e) {}
+    public void keyTyped(KeyEvent e) {
+        //Verificar esse
+        typed += e.getKeyChar();
+    }
 }
