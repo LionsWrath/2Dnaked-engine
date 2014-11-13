@@ -16,7 +16,7 @@ public class State extends Canvas implements Runnable {
     private volatile boolean running = false;
     private long ticks = 0;
     public String name;    
-    public boolean ready;    
+    public boolean ready;
     public BufferedImage screen = new BufferedImage(Main.GAME_WIDTH, Main.GAME_HEIGHT, BufferedImage.TYPE_INT_RGB);
     private Graphics2D g = screen.createGraphics();
 
